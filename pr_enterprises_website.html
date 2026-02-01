@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PR ENTERPRISES | Professional Security & Manpower Solutions</title>
+
+<!-- SEO -->
+<meta name="description" content="PR ENTERPRISES — High‑trust professional security and manpower services company providing guards, industrial security, housekeeping and facility manpower across sectors.">
+<meta name="keywords" content="PR Enterprises security, security agency Rewari, professional guards, industrial security, manpower services Haryana">
+<meta name="author" content="PR ENTERPRISES">
+
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* ======================
+   CORPORATE SECURITY UI
+====================== */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0b0f16;color:#1f2933;line-height:1.65;scroll-behavior:smooth}
+img{max-width:100%;display:block}
+a{text-decoration:none}
+
+:root{
+--navy:#0b1320;
+--navy2:#0f172a;
+--charcoal:#111827;
+--steel:#e5e7eb;
+--white:#ffffff;
+--accent:#1db954;
+--accent2:#1e40af;
+}
+
+.container{max-width:1200px;margin:auto;padding:0 24px}
+
+/* ===== HEADER ===== */
+header{position:fixed;top:0;width:100%;background:rgba(11,19,32,.95);backdrop-filter:blur(6px);z-index:999;border-bottom:1px solid #1f2937}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.logo{color:var(--white);font-weight:800;letter-spacing:.5px}
+.logo span{color:var(--accent)}
+.nav ul{display:flex;gap:28px;list-style:none}
+.nav a{color:#cbd5e1;font-size:14px;font-weight:500}
+.nav a:hover{color:var(--white)}
+.menu-btn{display:none;color:white;font-size:24px}
+.cta-top{background:var(--accent);color:white;padding:10px 16px;border-radius:6px;font-size:13px;font-weight:600}
+
+/* ===== HERO ===== */
+.hero{margin-top:72px;position:relative;height:92vh;overflow:hidden;background:#000}
+.slide{position:absolute;width:100%;height:100%;opacity:0;transition:opacity 1s}
+.slide.active{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;filter:brightness(45%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,6,23,.85),rgba(2,6,23,.4))}
+.hero-content{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;max-width:900px;color:white}
+.hero h1{font-size:48px;font-weight:800;line-height:1.15;margin-bottom:18px}
+.hero p{color:#cbd5e1;margin-bottom:28px;font-size:18px}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+.btn{padding:14px 22px;border-radius:6px;font-weight:700;font-size:14px}
+.btn-primary{background:var(--accent);color:white}
+.btn-dark{background:#111827;color:white;border:1px solid #374151}
+
+/* ===== SECTIONS ===== */
+.section{padding:90px 0;background:var(--white)}
+.section.dark{background:var(--navy2);color:white}
+.section h2{font-size:34px;font-weight:800;margin-bottom:18px}
+.section p.lead{color:#475569;max-width:850px}
+.dark p.lead{color:#cbd5e1}
+
+/* ===== GRID CARDS ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;margin-top:40px}
+.card{background:white;border:1px solid #e5e7eb;border-radius:10px;padding:26px;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 15px 40px rgba(0,0,0,.08)}
+.card i{font-size:28px;color:var(--accent2);margin-bottom:12px}
+.card h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.card p{font-size:14px;color:#475569}
+.dark .card{background:#0b1220;border:1px solid #1f2937}
+.dark .card p{color:#cbd5e1}
+
+/* ===== STRIP ===== */
+.strip{background:linear-gradient(90deg,#020617,#0b1320);color:white;padding:60px 0;border-top:1px solid #1f2937;border-bottom:1px solid #1f2937}
+.strip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.strip-item{display:flex;gap:14px}
+.strip-item i{font-size:22px;color:var(--accent)}
+
+/* ===== INDUSTRIES ===== */
+.badges{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.badge{background:#0f172a;color:#e5e7eb;padding:12px 16px;border-radius:8px;font-size:13px;border:1px solid #1f2937}
+
+/* ===== CONTACT ===== */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:30px}
+form{background:#0b1220;padding:30px;border-radius:12px;border:1px solid #1f2937}
+form input,form textarea,form select{width:100%;padding:14px;border-radius:8px;border:1px solid #334155;background:#020617;color:#e5e7eb;margin-bottom:14px;font-family:Inter}
+form button{border:none;cursor:pointer;width:100%}
+.info-box{background:#0b1220;padding:30px;border-radius:12px;border:1px solid #1f2937;color:#cbd5e1}
+.info-box h4{color:white;margin-bottom:12px}
+iframe{width:100%;height:300px;border:0;border-radius:10px;margin-top:16px}
+
+/* ===== FOOTER ===== */
+footer{background:#020617;color:#94a3b8;padding:50px 0;margin-top:60px;border-top:1px solid #1f2937}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px}
+footer h5{color:white;margin-bottom:10px}
+footer p,footer a{font-size:14px;color:#94a3b8}
+
+/* ===== WHATSAPP ===== */
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;z-index:999}
+
+/* ===== MOBILE ===== */
+@media(max-width:900px){
+.contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+.nav ul{display:none;position:absolute;background:var(--navy);top:60px;left:0;width:100%;flex-direction:column;padding:20px}
+.nav ul.show{display:flex}
+.menu-btn{display:block}
+.hero h1{font-size:34px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="container nav">
+<div class="logo">PR <span>ENTERPRISES</span></div>
+<i class="fa fa-bars menu-btn" onclick="toggleMenu()"></i>
+<ul id="menu">
+<li><a href="#about">About</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#manpower">Manpower</a></li>
+<li><a href="#compliance">Compliance</a></li>
+<li><a href="#industries">Industries</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a class="cta-top" href="#contact">Get Quote</a>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="slide active"><img src="https://images.unsplash.com/photo-1581093458791-9d09c2f5a5a1"></div>
+<div class="slide"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be"></div>
+<div class="slide"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf"></div>
+<div class="hero-overlay"></div>
+<div class="container hero-content">
+<h1>High‑Trust Security & Manpower Operations</h1>
+<p>Professional guarding, industrial security and trained manpower services delivered with discipline, compliance and continuous supervision.</p>
+<div class="hero-btns">
+<a href="#contact" class="btn btn-primary">Request Quote</a>
+<a href="https://wa.me/919996548851" class="btn btn-dark" target="_blank">WhatsApp</a>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+<div class="container">
+<h2>About PR ENTERPRISES</h2>
+<p class="lead">PR ENTERPRISES is a professionally managed security and manpower organization delivering integrated protection and workforce solutions across corporate, industrial and residential sectors. Our operating model emphasizes verification, training, compliance and structured supervision to ensure dependable field performance.</p>
+
+<div class="grid">
+<div class="card"><i class="fa fa-user-check"></i><h3>Verified Personnel</h3><p>Background screened and police‑verified deployment staff.</p></div>
+<div class="card"><i class="fa fa-clipboard-check"></i><h3>Compliance Driven</h3><p>Operational processes aligned with statutory and client compliance needs.</p></div>
+<div class="card"><i class="fa fa-tower-observation"></i><h3>Active Supervision</h3><p>Field officers and supervisors ensure service discipline.</p></div>
+</div>
+</div>
+</section>
+
+<!-- SECURITY SERVICES -->
+<section class="section dark" id="security">
+<div class="container">
+<h2>Security Services</h2>
+<div class="grid">
+<div class="card"><i class="fa fa-shield-halved"></i><h3>Manned Guarding</h3><p>Uniformed, trained guards for premises protection.</p></div>
+<div class="card"><i class="fa fa-industry"></i><h3>Industrial Security</h3><p>Plant, factory and warehouse security coverage.</p></div>
+<div class="card"><i class="fa fa-building"></i><h3>Corporate Security</h3><p>Office, corporate park and commercial security.</p></div>
+<div class="card"><i class="fa fa-house"></i><h3>Residential Security</h3><p>Society and gated community deployment.</p></div>
+<div class="card"><i class="fa fa-id-card"></i><h3>Access Control</h3><p>Gate control and visitor verification.</p></div>
+<div class="card"><i class="fa fa-moon"></i><h3>Patrol Services</h3><p>Day & night patrol with reporting protocol.</p></div>
+<div class="card"><i class="fa fa-user-secret"></i><h3>Executive Protection</h3><p>Bouncer and executive security staff.</p></div>
+</div>
+</div>
+</section>
+
+<!-- MANPOWER -->
+<section class="section" id="manpower">
+<div class="container">
+<h2>Manpower & Facility Services</h2>
+<div class="grid">
+<div class="card"><i class="fa fa-broom"></i><h3>Housekeeping Staff</h3><p>Trained housekeeping and sanitation teams.</p></div>
+<div class="card"><i class="fa fa-person-digging"></i><h3>Sweeper Teams</h3><p>Cleaning workforce for facilities & campuses.</p></div>
+<div class="card"><i class="fa fa-users"></i><h3>Skilled Manpower</h3><p>Skilled and semi‑skilled workforce supply.</p></div>
+<div class="card"><i class="fa fa-screwdriver-wrench"></i><h3>Facility Support</h3><p>Support staff for integrated facility operations.</p></div>
+</div>
+</div>
+</section>
+
+<!-- COMPLIANCE -->
+<section class="strip" id="compliance">
+<div class="container strip-grid">
+<div class="strip-item"><i class="fa fa-id-badge"></i><div><b>Police Verified Staff</b><br>Identity & background checks completed</div></div>
+<div class="strip-item"><i class="fa fa-graduation-cap"></i><div><b>Training Programs</b><br>Duty, conduct & emergency drills</div></div>
+<div class="strip-item"><i class="fa fa-list-check"></i><div><b>Quality Audits</b><br>Regular inspection & reporting</div></div>
+<div class="strip-item"><i class="fa fa-user-tie"></i><div><b>Supervisor Model</b><br>Structured chain of command</div></div>
+</div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section" id="industries">
+<div class="container">
+<h2>Industries Served</h2>
+<div class="badges">
+<span class="badge">Corporate Offices</span>
+<span class="badge">Factories</span>
+<span class="badge">Warehouses</span>
+<span class="badge">Residential Societies</span>
+<span class="badge">Hospitals</span>
+<span class="badge">Educational Institutions</span>
+<span class="badge">Retail & Commercial Complexes</span>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section dark" id="contact">
+<div class="container">
+<h2>Enquiry & Contact</h2>
+<div class="contact-grid">
+<form onsubmit="event.preventDefault();alert('Enquiry submitted — PR ENTERPRISES will contact you shortly.');">
+<input placeholder="Full Name" required>
+<input placeholder="Company Name">
+<input placeholder="Phone" required>
+<input type="email" placeholder="Email">
+<textarea rows="5" placeholder="Requirement"></textarea>
+<button class="btn btn-primary">Submit Enquiry</button>
+</form>
+
+<div class="info-box">
+<h4>PR ENTERPRISES</h4>
+<p>Circular Road, Opp. Metro Hospital,<br>Rewari (Haryana)</p>
+<p>📞 +91 9996548851<br>📞 +91 9996548855</p>
+<p>✉ prgroup.india8@gmail.com</p>
+<p>🌐 prgroupindia.com</p>
+<iframe src="https://maps.google.com/maps?q=Rewari%20Haryana&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container foot-grid">
+<div><h5>PR ENTERPRISES</h5><p>Professional Security & Manpower Solutions</p></div>
+<div><h5>Core Services</h5><p>Security Guards<br>Industrial Security<br>Housekeeping</p></div>
+<div><h5>Contact</h5><p>Rewari, Haryana<br>+91 9996548851</p></div>
+</div>
+<p style="text-align:center;margin-top:30px">© 2026 PR ENTERPRISES — All Rights Reserved</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919996548851" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+function toggleMenu(){document.getElementById('menu').classList.toggle('show')}
+let slides=document.querySelectorAll('.slide');let i=0;
+setInterval(()=>{slides[i].classList.remove('active');i=(i+1)%slides.length;slides[i].classList.add('active');},5000);
+</script>
+
+</body>
+</html>
